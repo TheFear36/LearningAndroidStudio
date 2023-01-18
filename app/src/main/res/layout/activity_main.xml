@@ -11,54 +11,53 @@
         android:id="@+id/image"
         android:layout_width="@dimen/image_dimen"
         android:layout_height="@dimen/image_dimen"
-        android:src="@drawable/merlin_monro"
         android:layout_marginTop="@dimen/default_margin"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_pa_merlin_monro"
+        app:layout_constraintBottom_toTopOf="@id/radio_group"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/radio_group">
-    </ImageView>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_next_picture_text"
         android:layout_marginBottom="@dimen/default_margin"
-        app:layout_constraintTop_toBottomOf="@id/radio_group"
+        android:text="@string/button_next_picture_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radio_group" />
 
     <RadioGroup
         android:id="@+id/radio_group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/default_margin"
-        app:layout_constraintTop_toBottomOf="@+id/image"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@string/button_next_picture_text"
-        >
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image">
+
         <RadioButton
             android:id="@+id/r_button_pop_art"
-            android:text="@string/pop_art_text"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:text="@string/pop_art_text">
 
         </RadioButton>
 
         <RadioButton
             android:id="@+id/r_button_surrealism"
-            android:text="@string/surrealism_text"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="@string/surrealism_text" />
 
         <RadioButton
             android:id="@+id/r_button_asian_girls"
-            android:text="@string/asian_girls_text"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="@string/asian_girls_text" />
     </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
