@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Learning Android Studio</string>
+    <string name="button_next_picture_text">Next image</string>
+    <string name="pop_art_text">Поп Арт</string>
+    <string name="surrealism_text">Сюрреализм</string>
+    <string name="asian_girls_text">Азиатские девушки</string>
 </resources>

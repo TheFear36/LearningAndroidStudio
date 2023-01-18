@@ -1,14 +1,16 @@
-package com.example.learningandroidstudio;
+package com.example.learningandroidstudio
 
-import androidx.appcompat.app.AppCompatActivity;
+import android.annotation.SuppressLint
+import android.os.Bundle
+import android.widget.Button
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 
-import android.os.Bundle;
+class MainActivity : AppCompatActivity() {
+    @SuppressLint("ResourceAsColor")
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
 
-public class MainActivity extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
     }
 }
